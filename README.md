@@ -46,7 +46,6 @@ GYM/
 │   ├── index.html           # Página principal
 │   ├── styles.css           # Estilos CSS
 │   └── script.js            # JavaScript
-└── README.md                # Este ficheiro
 ```
 
 
