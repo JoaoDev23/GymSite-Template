@@ -1,4 +1,4 @@
-Um website moderno e responsivo para ginásios e centros de fitness, desenvolvido com HTML5, CSS3 e JavaScript puro. Este projeto oferece uma experiência de utilizador completa com sistema de tradução automática, FAQ interativo, e design elegante e profissional.
+Um website moderno e responsivo para ginásios e centros de fitness, desenvolvido com HTML5, CSS3 e JavaScript puro. Este projeto oferece uma experiência de utilizador completa com sistema de tradução automática, design elegante e profissional.
 
 ## Características
 
