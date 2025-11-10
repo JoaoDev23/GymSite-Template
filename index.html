@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <div class="spinner"></div>
+            <p data-translate="preloader.loading">LOADING...</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <span class="logo-letter">C</span>
+                    <span class="logo-text">COLOQUENOMEDASUAEMPRESA</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="active" data-translate="nav.home">HOME</a></li>
+                    <li><a href="#sobre" data-translate="nav.about">SOBRE</a></li>
+                    <li><a href="#modalidades" data-translate="nav.modalities">MODALIDADES</a></li>
+                    <li><a href="#" data-modal="contact" data-translate="nav.contacts">CONTACTOS</a></li>
+                    <li><a href="#servicos" data-translate="nav.services">SERVIÇOS</a></li>
+                </ul>
+                <div class="language-selector">
+                    <button class="language-btn" id="languageBtn" aria-label="Select Language">
+                        <span class="flag-icon flag-en"></span>
+                        <span class="language-code">EN</span>
+                        <span class="language-arrow">▼</span>
+                    </button>
+                    <div class="language-dropdown" id="languageDropdown">
+                        <button class="language-option" data-lang="en">
+                            <span class="flag-icon flag-en"></span>
+                            <span>English</span>
+                        </button>
+                        <button class="language-option" data-lang="pt">
+                            <span class="flag-icon flag-pt"></span>
+                            <span>Português</span>
+                        </button>
+                    </div>
+                </div>
+                <button class="menu-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="files/video.mp4" type="video/mp4">
+            <source src="files/video.m4v" type="video/mp4">
+            <source src="files/video.webm" type="video/webm">
+            <!-- Fallback para navegadores que não suportam vídeo -->
+            O teu navegador não suporta o elemento de vídeo.
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title" data-translate="hero.title">Transform Your Body, Transform Your Life</h1>
+            <p class="hero-subtitle" data-translate="hero.subtitle">Welcome to Your Fitness Journey</p>
+        </div>
+    </section>
+
+    <!-- Sobre Nós Section -->
+    <section id="sobre" class="sobre-nos">
+        <div class="sobre-container">
+            <div class="sobre-left">
+                <p class="sobre-subtitle" data-translate="about.subtitle">ABOUT US</p>
+                <h2 class="sobre-title" data-translate="about.title">YOUR FITNESS JOURNEY STARTS HERE</h2>
+                <p class="sobre-text" data-translate="about.text1">
+                    Welcome to ColoqueNomeDasuaempresa, where fitness meets excellence. We are more than just a gym - we are your partners in achieving a healthier, stronger, and more confident version of yourself. Our state-of-the-art facilities, expert trainers, and diverse range of programs are designed to support you every step of the way.
+                </p>
+                <p class="sobre-text" data-translate="about.text2">
+                    Whether you are just starting your fitness journey or looking to take your training to the next level, we have everything you need. From personalized training programs to group classes that motivate and inspire, our commitment is to help you reach your goals in a supportive and welcoming environment.
+                </p>
+                <button class="sobre-btn" data-modal="contact" data-translate="about.button">START YOUR JOURNEY TODAY!</button>
+            </div>
+            <div class="sobre-right">
+                <div class="features-grid-2x2">
+                    <div class="feature-item">
+                        <span class="feature-number">01</span>
+                        <div class="feature-content">
+                            <h3 class="feature-title" data-translate="about.feature1.title">NEW FACILITIES</h3>
+                            <p class="feature-description" data-translate="about.feature1.desc">
+                                With renovated, elegant and functional spaces, we have created a modern environment, designed for your comfort and to further elevate your training experience.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-number">02</span>
+                        <div class="feature-content">
+                            <h3 class="feature-title" data-translate="about.feature2.title">NEW EQUIPMENT</h3>
+                            <p class="feature-description" data-translate="about.feature2.desc">
+                                Equipment for all goals. With the latest technology, we guarantee workouts adapted to your goals, whether they are strength, endurance or balance.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-number">03</span>
+                        <div class="feature-content">
+                            <h3 class="feature-title" data-translate="about.feature3.title">NEW SERVICES</h3>
+                            <p class="feature-description" data-translate="about.feature3.desc">
+                                Experience a new approach to wellness. The new services offer you innovative and personalized solutions to meet your needs.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-number">04</span>
+                        <div class="feature-content">
+                            <h3 class="feature-title" data-translate="about.feature4.title">NEW MODALITIES</h3>
+                            <p class="feature-description" data-translate="about.feature4.desc">
+                                Find group classes for all tastes and goals. The new modalities were designed to diversify your routine and provide you with unique challenges.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modalidades Section -->
+    <section id="modalidades" class="modalidades-section">
+        <div class="modalidades-content">
+            <h2 class="section-heading" data-translate="modalities.title">Explore our modalities</h2>
+            <p class="modalidades-description" data-translate="modalities.description">Discover all the options we have for you</p>
+        </div>
+        <div class="catalog-grid">
+            <div class="catalog-card">
+                <div class="catalog-image" style="background-image: url('files/modalidades/Personal Trainer.jpg'), linear-gradient(135deg, #8B7355 0%, #6B5B47 100%);">
+                    <div class="catalog-overlay"></div>
+                    <h3 class="catalog-title" data-translate="modalities.personalTrainer.title">Personal Trainer</h3>
+                    <p class="catalog-subtitle" data-translate="modalities.personalTrainer.subtitle">Personalized and individualized training</p>
+                    <button class="catalog-btn" data-modal="contact" data-translate="modalities.button">SEE MORE</button>
+                </div>
+            </div>
+            <div class="catalog-card">
+                <div class="catalog-image" style="background-image: url('files/modalidades/aulas-grupo.jpg'), linear-gradient(135deg, #7A6B5E 0%, #5C4E42 100%);">
+                    <div class="catalog-overlay"></div>
+                    <h3 class="catalog-title" data-translate="modalities.groupClasses.title">Group Classes</h3>
+                    <p class="catalog-subtitle" data-translate="modalities.groupClasses.subtitle">CrossFit, Pilates, Yoga and much more</p>
+                    <button class="catalog-btn" data-modal="contact" data-translate="modalities.button">SEE MORE</button>
+                </div>
+            </div>
+            <div class="catalog-card">
+                <div class="catalog-image" style="background-image: url('files/modalidades/nutricional.jpg'), linear-gradient(135deg, #9B8B7A 0%, #7A6B5E 100%);">
+                    <div class="catalog-overlay"></div>
+                    <h3 class="catalog-title" data-translate="modalities.nutrition.title">Nutritional Counseling</h3>
+                    <p class="catalog-subtitle" data-translate="modalities.nutrition.subtitle">Personalized meal plans</p>
+                    <button class="catalog-btn" data-modal="contact" data-translate="modalities.button">SEE MORE</button>
+                </div>
+            </div>
+            <div class="catalog-card">
+                <div class="catalog-image" style="background-image: url('files/modalidades/musculacao.jpg'), linear-gradient(135deg, #A89B8A 0%, #8B7D6B 100%);">
+                    <div class="catalog-overlay"></div>
+                    <h3 class="catalog-title">Musculação</h3>
+                    <p class="catalog-subtitle">Equipamentos modernos e espaços amplos</p>
+                    <button class="catalog-btn" data-modal="contact">VER MAIS</button>
+                </div>
+            </div>
+            <div class="catalog-card">
+                <div class="catalog-image" style="background-image: url('files/modalidades/cardio.jpg'), linear-gradient(135deg, #6B5B47 0%, #5C4E42 100%);">
+                    <div class="catalog-overlay"></div>
+                    <h3 class="catalog-title">Cardio</h3>
+                    <p class="catalog-subtitle">Máquinas de última geração</p>
+                    <button class="catalog-btn" data-modal="contact">VER MAIS</button>
+                </div>
+            </div>
+            <div class="catalog-card">
+                <div class="catalog-image" style="background-image: url('files/modalidades/pilates.jpg'), linear-gradient(135deg, #8B6F47 0%, #7A5F3A 100%);">
+                    <div class="catalog-overlay"></div>
+                    <h3 class="catalog-title" data-translate="modalities.pilates.title">Pilates</h3>
+                    <p class="catalog-subtitle" data-translate="modalities.pilates.subtitle">Group and individual classes</p>
+                    <button class="catalog-btn" data-modal="contact" data-translate="modalities.button">SEE MORE</button>
+                </div>
+            </div>
+            <div class="catalog-card">
+                <div class="catalog-image" style="background-image: url('files/modalidades/yoga.jpg'), linear-gradient(135deg, #9B8B7A 0%, #8B7D6B 100%);">
+                    <div class="catalog-overlay"></div>
+                    <h3 class="catalog-title" data-translate="modalities.yoga.title">Yoga</h3>
+                    <p class="catalog-subtitle" data-translate="modalities.yoga.subtitle">Body and mind balance</p>
+                    <button class="catalog-btn" data-modal="contact" data-translate="modalities.button">SEE MORE</button>
+                </div>
+            </div>
+            <div class="catalog-card">
+                <div class="catalog-image" style="background-image: url('files/modalidades/crossfit.jpg'), linear-gradient(135deg, #7A6B5E 0%, #6B5B47 100%);">
+                    <div class="catalog-overlay"></div>
+                    <h3 class="catalog-title" data-translate="modalities.crossfit.title">CrossFit</h3>
+                    <p class="catalog-subtitle" data-translate="modalities.crossfit.subtitle">High-intensity functional training</p>
+                    <button class="catalog-btn" data-modal="contact" data-translate="modalities.button">SEE MORE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Partnership Section -->
+    <section id="servicos" class="partnership">
+        <div class="partnership-content">
+            <h2 class="section-heading" data-translate="partnership.title">Ready to Transform Your Life?</h2>
+            <p class="partnership-text" data-translate="partnership.text">
+                Join our community of fitness enthusiasts and start your transformation today. At ColoqueNomeDasuaempresa, we believe that everyone deserves to feel their best. Our comprehensive programs, expert guidance, and supportive community are here to help you achieve your fitness goals and unlock your full potential.
+            </p>
+            <div class="partnership-buttons">
+                <button class="partnership-btn" data-modal="workout" data-translate="partnership.button1">GET STARTED NOW</button>
+                <button class="partnership-btn partnership-btn-contact" data-modal="contact" data-translate="partnership.button2">CONTACT US</button>
+            </div>
+        </div>
+        
+        <div class="location-map">
+            <div class="map-container-wrapper">
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.5!2d-8.5197!3d41.4079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDI0JzI4LjQiTiA4wrAzMScxMC45Ilc!5e0!3m2!1spt-PT!2spt!4v1234567890123!5m2!1spt-PT!2spt&q=Rua+Talvai,+C.C.+E-Leclerc,+4764-503+Vila+Nova+de+Famalicão"
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Localização ColoqueNomeDasuaempresa - Rua Talvai, C.C. E-Leclerc, Vila Nova de Famalicão">
+                    </iframe>
+                </div>
+              </div>  
+              </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="faq-container">
+            <div class="faq-header">
+                <h2 class="section-heading" data-translate="faq.title">Frequently Asked Questions</h2>
+                <p class="faq-description" data-translate="faq.description">Everything you need to know to start your fitness journey with us</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-translate="faq.q1">How do I become a member?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-translate="faq.a1">Becoming a member is easy! You can sign up online through our website, visit us in person at the club, or call us at +351 252 023 493. We offer flexible membership plans to suit your lifestyle and fitness goals. Our team will be happy to help you choose the perfect plan for you.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-translate="faq.q2">What are your operating hours?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-translate="faq.a2">We are open Monday through Friday from 6:30 AM to 11:00 PM, and on weekends from 8:00 AM to 10:00 PM. Our extended hours ensure you can fit your workout into your busy schedule, no matter how packed your day is.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-translate="faq.q3">Can I try before I commit?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-translate="faq.a3">Absolutely! We offer free trial classes and facility tours so you can experience everything we have to offer before making a commitment. Contact us to schedule your complimentary trial session and see why we are the perfect fit for your fitness journey.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-translate="faq.q4">What types of classes and services do you offer?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-translate="faq.a4">We offer a comprehensive range of fitness options including Personal Training, Group Classes (CrossFit, Pilates, Yoga), Bodybuilding, Cardio Equipment, and Nutritional Counseling. Our diverse offerings ensure there is something for everyone, regardless of your fitness level or goals.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-translate="faq.q5">What should I bring to my workout?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-translate="faq.a5">Please bring a towel for your workout - it is required for hygiene and safety. We also recommend bringing a padlock for the lockers, though some are available at the club. Comfortable workout attire and a water bottle are also essential for a great training session.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-translate="faq.q6">How do I cancel or modify my membership?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-translate="faq.a6">You can cancel or modify your membership by visiting the club in person or contacting us via email at apoioaocliente@fitnessup.pt or phone at +351 252 023 493. We require 30 days notice for cancellations. Our team is always available to discuss your membership options.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-translate="faq.q7">Is parking available?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-translate="faq.a7">Yes! We are located in C.C. E-Leclerc with free parking available for all members. The parking is accessible during all shopping center operating hours, making it convenient for you to visit us at any time.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-translate="faq.q8">Do you provide personalized training programs?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-translate="faq.a8">Yes! Our Personal Trainer service offers fully customized training programs tailored to your specific goals, fitness level, and preferences. We also provide nutritional counseling to complement your training and help you achieve optimal results. Our expert trainers work closely with you to ensure you reach your full potential.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <span class="logo-letter">C</span>
+                <span class="logo-text">COLOQUENOMEDASUAEMPRESA</span>
+            </div>
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4 data-translate="footer.usefulLinks">Useful Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#" data-modal="contact">Contactos</a></li>
+                        <li><a href="#catalogo">Catálogos</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#">Livro de Reclamações</a></li>
+                        <li><a href="#">Política de Privacidade e Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 data-translate="footer.contacts">Contacts</h4>
+                    <p>Rua Talvai, C.C. E-Leclerc<br>4764-503 - Vila Nova de Famalicão</p>
+                    <p>+351 252 023 493</p>
+                    <p>apoioaocliente@fitnessup.pt</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-translate="footer.copyright">Copyright © ColoqueNomeDasuaempresa 2024</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Modal: Resgatar Plano de Treino -->
+    <div id="workoutModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Resgata o Teu Plano de Treino</h2>
+            <form id="workoutForm" class="modal-form">
+                <div class="form-group">
+                    <label>Sócio ColoqueNomeDasuaempresa?</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="member" value="sim" required>
+                            <span>Sim</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="member" value="nao" required>
+                            <span>Não</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="club-workout">Selecionar Clube</label>
+                    <select id="club-workout" required>
+                        <option value="">Selecionar Clube</option>
+                        <option value="porto-alegria">Porto - Alegria</option>
+                        <option value="lx-penha">Lx - Penha de França</option>
+                        <option value="lx-avenida">Lx - Avenida do Brasil</option>
+                        <option value="braga">Braga Parque</option>
+                        <option value="coimbra">Coimbra</option>
+                        <option value="faro">Faro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" required>
+                        Autorizo a receção de informação acerca de novos produtos e serviços, ofertas e campanhas especiais, informações atualizadas sobre a atividade da ColoqueNomeDasuaempresa e para efeitos de marketing direto, através de sms e/ou e-mail. Aceito os termos constantes na Política de Privacidade da ColoqueNomeDasuaempresa.
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-large">Submeter</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal: Contacto -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Fala Connosco</h2>
+            <form id="contactForm" class="modal-form">
+                <div class="form-group">
+                    <label for="club-contact">Selecionar Clube</label>
+                    <select id="club-contact" required>
+                        <option value="">Selecionar Clube</option>
+                        <option value="porto-alegria">Porto - Alegria</option>
+                        <option value="lx-penha">Lx - Penha de França</option>
+                        <option value="lx-avenida">Lx - Avenida do Brasil</option>
+                        <option value="braga">Braga Parque</option>
+                        <option value="coimbra">Coimbra</option>
+                        <option value="faro">Faro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Nome" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Mensagem" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-large">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal: Rastreio Nutricional -->
+    <div id="nutritionModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Marca Já o Teu Rastreio Nutricional!</h2>
+            <form id="nutritionForm" class="modal-form">
+                <div class="form-group">
+                    <label for="club-nutrition">Selecionar um Clube</label>
+                    <select id="club-nutrition" required>
+                        <option value="">Selecionar Clube</option>
+                        <option value="porto-alegria">Porto - Alegria</option>
+                        <option value="lx-penha">Lx - Penha de França</option>
+                        <option value="lx-avenida">Lx - Avenida do Brasil</option>
+                        <option value="braga">Braga Parque</option>
+                        <option value="coimbra">Coimbra</option>
+                        <option value="faro">Faro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Nome" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Telefone" required>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" required>
+                        Autorizo a receção de informação acerca de novos produtos e serviços, ofertas e campanhas especiais, informações atualizadas sobre a atividade da ColoqueNomeDasuaempresa e para efeitos de marketing direto, através de sms e/ou e-mail. Aceito os termos constantes na Política de Privacidade da ColoqueNomeDasuaempresa.
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-large">Marcar Agora!</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Success Message -->
+    <div id="successMessage" class="success-message">
+        <div class="success-content">
+            <span class="success-close">&times;</span>
+            <h3>Olá <span id="successName">NOME</span>.</h3>
+            <p id="successText">O teu pedido foi registado com sucesso.</p>
+            <p class="signature">UP Cumprimentos</p>
+            <button class="btn" onclick="closeSuccessMessage()">Fechar</button>
+        </div>
+    </div>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <h3 data-translate="cookie.title">Manage Consent</h3>
+                <p data-translate="cookie.text">To provide the best experiences, we use technologies like cookies to store and/or access device information. Consenting to these technologies will allow us to process data such as browsing behavior or unique IDs on this site. Not consenting or withdrawing consent may adversely affect certain features and functions.</p>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button id="acceptCookies" class="cookie-btn cookie-btn-accept" data-translate="cookie.accept">Accept</button>
+                <button id="rejectCookies" class="cookie-btn cookie-btn-reject" data-translate="cookie.reject">Reject</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
